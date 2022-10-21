@@ -1,0 +1,2 @@
+- Writing about.js is as same as creating a directory (say about/) and putting the about.js's code inside the index.js of about/ directory.
+- Write `page` at the end such that we can identify it as a regular component or an actual page.
