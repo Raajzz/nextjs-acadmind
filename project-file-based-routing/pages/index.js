@@ -1,26 +1,14 @@
-import Link from "next/link";
+import { DUMMY_EVENTS } from "../dummy-data";
+import FilteredEventList from "../components/events/FilteredEventList";
 
-const HomePage = () => {
+const IndexPage = () => {
+  console.log(DUMMY_EVENTS);
+
   return (
     <div>
-      <h1>The Home Page</h1>
-      {/* links */}
-      {/* 
-        For linking multiple pages we would not use anchor tags because they send a brand new request to the server which leads to the loss of the app state
-      */}
-      <ul>
-        <li>
-          <Link href="/portfolio">Portfolio</Link>
-          {/* replace, which won't add a new page ontop rather replaces the existing page */}
-        </li>
-        <li>
-          <Link replace href="/clients">
-            Clients
-          </Link>
-        </li>
-      </ul>
+      <FilteredEventList props={DUMMY_EVENTS} />
     </div>
   );
 };
 
-export default HomePage;
+export default IndexPage;
