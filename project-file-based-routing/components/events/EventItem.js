@@ -1,5 +1,8 @@
 import classes from "./EventItem.module.css";
 import Button from "../ui/Button";
+import AddressIcon from "../icons/address-icon";
+import ArrowRightIcon from "../icons/arrow-right-icon";
+import DateIcon from "../icons/date-icon";
 
 const EventItem = ({ props }) => {
   const { title, image, date, location, id } = props;
@@ -20,13 +23,24 @@ const EventItem = ({ props }) => {
           <h2>{title}</h2>
         </div>
         <div>
-          <time>{humanReadableDate}</time>
+          <span className={classes.date}>
+            <DateIcon />
+            <time>{humanReadableDate}</time>
+          </span>
         </div>
         <div className={classes.address}>
-          <address>{formattedAddress}</address>
+          <span className={classes.address}>
+            <AddressIcon />
+            <address>{formattedAddress}</address>
+          </span>
         </div>
         <div className={classes.actions}>
-          <Button link={exploreLink}>Explore Event</Button>
+          <Button link={exploreLink}>
+            <span>Explore Event</span>
+            <span className={classes.icon}>
+              <ArrowRightIcon />
+            </span>
+          </Button>
         </div>
       </div>
     </li>
