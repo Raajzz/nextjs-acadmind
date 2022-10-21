@@ -1,8 +1,13 @@
+import EventList from "../../components/events/EventList";
+import { DUMMY_EVENTS } from "../../dummy-data";
+import EventSearch from "../../components/events/EventSearch";
+
 const EventsPage = () => {
   return (
-    <div>
-      <h1>This is the events page</h1>
-    </div>
+    <>
+      <EventSearch />
+      <EventList props={DUMMY_EVENTS} />
+    </>
   );
 };
 
