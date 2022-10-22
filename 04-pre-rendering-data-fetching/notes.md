@@ -21,3 +21,13 @@
 - Cached by the server/CDN serving the app
 - `getStaticProps(context){...}` is used for this, used to execute server-side code (Like, you can't use window object).
 - Code inside `getStaticProps` is never given to the client, therefore it hit home close to the idea of a backend server.
+
+- Next.js pre-renders by default if you have a static page with no dynamic content.
+
+- The build folder (This is building and deploying the page to the server) will have different types of HTML files, one with just static content, one with static + JSON (dynamic) content (SSG) and one which should be server side rendered.
+
+- Incremental Static Generation
+  - Pre-generate page
+  - Re-generate it on every request, at most X seconds
+    - Server the old page if it's less than X seconds
+    - Serves the new page, it'll be cached and the users will see the re-generated new page.
