@@ -25,7 +25,7 @@ export const DUMMY_EVENTS = [
     description:
       "You probably need no help with networking in general. But focusing your energy correctly - that is something where most people can improve.",
     location: "My Street 12, 10115 Broke City",
-    date: "2022-04-10",
+    date: "2020-04-10",
     image: "images/extrovert-event.jpg",
     isFeatured: true,
   },

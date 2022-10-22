@@ -1,7 +1,7 @@
 import EventItem from "./EventItem";
-import classes from "./FilteredEventList.module.css";
+import classes from "./FeaturedEventList.module.css";
 
-const FilteredEventList = ({ props }) => {
+const FeaturedEventList = ({ props }) => {
   return (
     <ul className={classes.list}>
       {props.map((data) => {
@@ -11,4 +11,4 @@ const FilteredEventList = ({ props }) => {
   );
 };
 
-export default FilteredEventList;
+export default FeaturedEventList;

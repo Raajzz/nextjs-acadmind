@@ -1,10 +1,10 @@
 import { DUMMY_EVENTS } from "../dummy-data";
-import FilteredEventList from "../components/events/FilteredEventList";
+import FeaturedEventList from "../components/events/FeaturedEventList";
 
 const IndexPage = () => {
   return (
     <div>
-      <FilteredEventList props={DUMMY_EVENTS} />
+      <FeaturedEventList props={DUMMY_EVENTS} />
     </div>
   );
 };
