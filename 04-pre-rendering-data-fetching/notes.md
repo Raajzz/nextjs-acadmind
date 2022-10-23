@@ -31,3 +31,7 @@
   - Re-generate it on every request, at most X seconds
     - Server the old page if it's less than X seconds
     - Serves the new page, it'll be cached and the users will see the re-generated new page.
+
+- Next.js won't pre-generate dynamic ([].js) pages, Next.js doesn't know how many pages should be displayed and what are the concrete values that will be present when the app runs.
+
+- Now, this `Link` tag also does pre-fetching. When you click a `Link` JS will click in switch the pages up but the data needed is pretty much pre-rendered.
