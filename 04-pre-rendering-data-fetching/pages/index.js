@@ -16,6 +16,7 @@ const HomePage = (props) => {
 };
 
 export async function getStaticProps() {
+  console.log("index.js getStaticProps");
   const filePath = path.join(process.cwd(), "data/dummy-backend.json");
   const jsonData = await fs.readFile(filePath, "utf8");
   let data = JSON.parse(jsonData);
