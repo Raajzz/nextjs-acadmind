@@ -35,3 +35,8 @@
 - Next.js won't pre-generate dynamic ([].js) pages, Next.js doesn't know how many pages should be displayed and what are the concrete values that will be present when the app runs.
 
 - Now, this `Link` tag also does pre-fetching. When you click a `Link` JS will click in switch the pages up but the data needed is pretty much pre-rendered.
+
+# Client-side Data Fetching
+- Data changing with high frequency
+- Highly user specific data, where it is fine for the users to wait a minute or two.
+- Partial Data (Say, there is a lot of data fetching happening because the page is a dashboard, it's really useless to ask the server to do everything, eh).

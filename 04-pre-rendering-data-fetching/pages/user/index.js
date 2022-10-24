@@ -1,0 +1,5 @@
+const UserIndexPage = () => {
+  return <div>This page does not exist!</div>;
+};
+
+export default UserIndexPage;
